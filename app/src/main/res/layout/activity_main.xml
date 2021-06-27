@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A6AED6"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Tvciudad"
+        android:layout_width="200dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="76dp"
+        android:fontFamily="serif"
+        android:text="Ciudad"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.omarshehe.forminputkotlin.FormInputText
+        android:id="@+id/IdCiudad"
+        android:layout_width="290dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="100dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:form_label="Escriba el ID  de la Ciudad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Tvciudad" />
+
+    <com.omarshehe.forminputkotlin.FormInputText
+        android:id="@+id/NombreCiudad"
+        android:layout_width="290dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:form_label="Nombre Ciudad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IdCiudad" />
+
+    <com.omarshehe.forminputkotlin.FormInputText
+        android:id="@+id/PoblacionCiudad"
+        android:layout_width="290dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:form_label="Poblacion Ciudad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NombreCiudad" />
+
+    <com.omarshehe.forminputkotlin.FormInputText
+        android:id="@+id/LongitudCiudad"
+        android:layout_width="290dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:form_label="Longitud Ciudad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PoblacionCiudad" />
+
+    <com.omarshehe.forminputkotlin.FormInputText
+        android:id="@+id/LatitudCiudad"
+        android:layout_width="290dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:form_label="Latitud Ciudad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LongitudCiudad" />
+
+    <com.kusu.loadingbutton.LoadingButton
+        android:id="@+id/btnagregarciudad"
+        android:layout_width="268dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="@color/colorGrey"
+        android:text="Agregar Ciudad"
+        android:textColor="@color/white"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LatitudCiudad"
+        app:layout_constraintVertical_bias="0.178"
+        app:lb_isShadowEnable="true"
+        app:lb_shadowHeight="5dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
